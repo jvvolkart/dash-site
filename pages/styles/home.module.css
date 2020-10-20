@@ -1,0 +1,116 @@
+.firstSection {
+  padding-top: 40px;
+  background-image: url(/images/bg-topo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+}
+.ctaTexts {
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ctaTexts h1 span {
+  display: block;
+  font-size: 25px;
+}
+
+.ctaTexts h4 {
+  color: #ffee58;
+  font-size: 16px;
+  font-weight: 400;
+}
+.firstImage, .dashDesktop {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstImage img {
+  width: 500px;
+}
+
+.dashDesktop img {
+ width: 580px;
+ max-width: 100%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #353c70;
+  padding: 12px;
+  border-radius: 8px;
+  min-height: 327px;
+  margin-bottom: 30px;
+}
+
+.card p {
+  font-size: 14px;
+  width: 80%;
+  margin: auto 0px;
+  color: #ffffffd4;
+}
+
+.cardPriceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.cardPriceContainer .cardPrice {
+  text-align: center;
+  color: #fff;
+  height: 380px;
+  background: #353c70;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 87%;
+  padding-bottom: 20px;
+  justify-content: space-around;
+}
+
+.cardPriceContainer .cardPrice h5 {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.cardPriceContainer .cardPrice h4 {
+  color: #ffee58;
+  font-size: 25px;
+}
+
+.cardPriceContainer .cardPrice p {
+    width: 90%;
+}
+
+.cardPriceContainer .cardPrice a {
+  border-radius: 40px;
+  background: #ffee58;
+  padding: 10px 30px;
+  color: #353c70;
+  font-weight: 600;
+  margin-top: 15px;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.createAccount:hover {
+  box-shadow: 1px 0 8px #00000085;
+}
+
+.sectionFooter {
+    background-image: url(/images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: bottom;
+    padding-bottom: 180px;
+}

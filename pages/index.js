@@ -1,209 +1,266 @@
 import Head from 'next/head'
+import { useEffect, useState } from 'react'
+import App from './_app'
+import css from './styles/home.module.css'
+import Header from '../components/Header'
+import Button from '../components/Button'
 
-export default function Home() {
+function Home() {
+  const [fixedNav, setFixedNav] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      console.log(currentScrollY);
+
+      if (currentScrollY > 1) {
+        setFixedNav(true);
+      } else {
+        setFixedNav(false);
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="container">
+    <>
       <Head>
-        <title>Create Next App</title>
+        <title>DashTrader</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossOrigin="anonymous"></link>
       </Head>
 
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <body>
+        <Header fixed={fixedNav} />
+        <section className={css.firstSection}>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
+                <div className={css.ctaTexts}>
+                  <h1><span>UM TRADER</span> EM OUTRO NÍVEL!</h1>
+                  <p>OBTENHA INFORMAÇÕES VALIOSAS DAS SUAS OPERAÇÕES
+                    E MULTIPLIQUE SEUS RESULTADOS.</p>
+                  <Button text="INICIAR AGORA" link='http://app.dashtrader.com.br' />
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className={css.firstImage}>
+                  <img style={{ width: '500px', maxWidth: '100%' }} src="/images/firstSection.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <section style={{ marginTop: '30px' }}>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
+                <div className={css.ctaTexts}>
+                  <h4>DASH O QUÊ?</h4>
+                  <h2>Dashboard Trader</h2>
+                  <p>O DashTrader é o software de métricas e gerenciamento mais
+                  robusto, poderoso, assertivo e direto do que qualquer outro
+                  software ou planilha de Excel. Tudo isso de uma forma simples e
+                  com uma usabilidade muito amigável!</p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className={css.dashDesktop}>
+                  <img src="/images/dashDesktop.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <section style={{ marginTop: '30px' }}>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className={css.ctaTexts} style={{ height: 'auto' }}>
+                  <h4>MÉTRICAS</h4>
+                  <h2 style={{ marginBottom: '40px' }}>Poderosa análise de dados</h2>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+                  <div className="row">
+                    <div className="col-md-4">
+                      <div className={css.card}>
+                        <img style={{ width: '100%' }} src="/images/cards/acomp.png" />
+                        <p>Acompanhe o fechamento de cada mês
+                        em um período de até 12 meses e veja sua
+                          evolução de forma clara e linear</p>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className={css.card}>
+                        <img style={{ width: '100%' }} src="/images/cards/lucro-preju.png" />
+                        <p>Saiba como está se saindo a cada período
+                        e tenha uma visão mais clara do seus
+                        lucros.</p>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className={css.card}>
+                        <img style={{ width: '100%' }} src="/images/cards/metas.png" />
+                        <p>Defina metas e acompanhe seu progresso
+                        a cada operação.</p>
+                      </div>
+                    </div>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+                  </div>
+                  <div className="row">
+                    <div className="col-md-4">
+                      <div className={css.card}>
+                        <img style={{ width: '100%' }} src="/images/cards/horarios.png" />
+                        <p>Saiba em quais horários você está tendo
+                        melhores resultados e abuse deles!
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className={css.card}>
+                        <img style={{ width: '100%' }} src="/images/cards/semana.png" />
+                        <p style={{ width: '81%' }}>Deixa eu te fazer uma pergunta: Qual é o
+                        melhor dia da semana para operar?
+                        Não sabe? Está esperando o que pra descobrir?
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className={css.card}>
+                        <img style={{ width: '100%' }} src="/images/cards/outros.png" />
+                        <p style={{ width: '81%' }}>No momento existem 9 métricas
+                        disponíveis, e estamos sempre pensando
+                        em mais possibilidades para oferecer um
+                        melhor serviço para você!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+        <section style={{ marginTop: '30px' }}>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
+                <div className={css.ctaTexts}>
+                  <h4>CADASTRO SIMPLES</h4>
+                  <h2>Cadastrando operações</h2>
+                  <p>Você pode adicionar suas operações manualmente, cadastrando
+                  um de cada vez enquanto opera ou fazer upload de um arquivo CSV
+                  exportado pela IqOption como explicado na seção abaixo.</p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className={css.dashDesktop}>
+                  <img style={{ width: '450px' }} src="/images/addTrader.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
+        <section style={{ marginTop: '30px' }}>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
+                <div className={css.ctaTexts}>
+                  <h4>FÁCIL IMPORTAÇÃO</h4>
+                  <h2>IqOption -> DashTrader</h2>
+                  <p>De forma muito simples e rápida você pode trazer os dados das
+                  suas operações para dentro do DashTrader, basta ir na tela de
+                  Histórico de Trading e baixar o CSV do período desejado com seus
+                  dados!</p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className={css.dashDesktop}>
+                  <img src="/images/iq.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+        <section style={{ marginTop: '30px' }}>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
+                <div className={css.ctaTexts}>
+                  <h4>TECNOLOGIA DE PONTA</h4>
+                  <h2>Responsivo</h2>
+                  <p>O DashTrader usa as melhores tecnologias disponíveis atualmente
+                  e é claro, funciona perfeitamente em SmartPhones, Tablets e
+                  Computadores com um layout flexível e adaptável.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className={css.dashDesktop}>
+                  <img src="/images/devices.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+        <section style={{ marginTop: '30px' }} className={css.sectionFooter}>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className={css.ctaTexts} style={{ alignItems: 'center', height: 'auto' }}>
+                  <h4>PREÇOS</h4>
+                  <h2>Nossos planos</h2>
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+                  <div className="row" style={{ maxWidth: '830px', marginTop: '30px' }}>
+                    <div className="col-md-6">
+                      <div className={css.cardPriceContainer}>
+                        <div className={css.cardPrice}>
+                          <h5>Plano Gratuito</h5>
+                          <p>Aproveite nossa fase de testes para usar o DashTrader sem custos</p>
 
-        footer img {
-          margin-left: 0.5rem;
-        }
+                          <h4>GRÁTIS</h4>
 
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+                          <a href="http://app.dashtrader.com.br" target="_blank" className={css.createAccount}>Criar conta</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className={css.cardPriceContainer}>
+                        <div className={css.cardPrice}>
+                          <h5>Plano Premium</h5>
+                          <p>Em breve habilitaremos o plano premium e disponibilizaremos pra vocês</p>
 
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
+                          <h4>R$ ??,00/mês</h4>
 
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
+                          <a style={{ border: '1px solid #fff', background: 'transparent', color: '#fff' }}>Em breve</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
+            </div>
+          </div>
+        </section>
+      </body>
 
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
 
-        .title,
-        .description {
-          text-align: center;
-        }
+    </>
+  )
+}
 
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+export default () => {
+  return (
+    <App Component={Home} />
   )
 }

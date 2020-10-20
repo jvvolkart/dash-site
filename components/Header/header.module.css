@@ -1,0 +1,40 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: .3s;
+}
+
+.header .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .headerContainer span {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.headerFixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #2c325c;
+    z-index: 1;
+    box-shadow: 1px 0px 10px #0000006b;
+    transition: .3s;
+}
+
+.headerFixed .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerFixed .headerContainer span {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
