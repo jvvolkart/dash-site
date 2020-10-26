@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
+import ReactGa from 'react-ga'
+
 import App from './_app'
 import css from './styles/home.module.css'
 import Header from '../components/Header'
@@ -7,6 +9,11 @@ import Button from '../components/Button'
 
 function Home() {
   const [fixedNav, setFixedNav] = useState(false);
+
+  useEffect(() => {
+    ReactGa.initialize('UA-181019846-3');
+    ReactGa.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
