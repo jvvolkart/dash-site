@@ -6,9 +6,11 @@ import App from './_app'
 import css from './styles/home.module.css'
 import Header from '../components/Header'
 import Button from '../components/Button'
+import { useWindowDimensions } from '../functions/utils'
 
 function Home() {
   const [fixedNav, setFixedNav] = useState(false);
+  const { height, width } = useWindowDimensions();
 
   useEffect(() => {
     ReactGa.initialize('UA-181019846-3');
@@ -43,7 +45,7 @@ function Home() {
 
       <body>
         <Header fixed={fixedNav} />
-        <section className={css.firstSection}>
+        <section className={css.firstSection} style={width < 769 ? { paddingTop: '100px', backgroundSize: '220px' } : {}}>
           <div className="container">
             <div className="row">
               <div className="col-md-6">

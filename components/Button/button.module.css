@@ -12,7 +12,21 @@
     text-align: center;
 }
 
-.button:hover {
+.button:hover, .buttonSmall:hover {
     color: #1E2141;
     box-shadow: 1px 0 8px #00000094;
+}
+
+.buttonSmall {
+    color: #1E2141;
+    background-color: #ffee58;
+    border: none;
+    padding: 7px 27px;
+    border-radius: 200px;
+    font-weight: 600;
+    font-size: 14px;
+    width: 100px;
+    transition: .6s;
+    text-decoration: none !important;
+    text-align: center;
 }
