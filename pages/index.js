@@ -101,7 +101,7 @@ function Home() {
                         <img style={{ width: '100%' }} src="/images/cards/acomp.png" />
                         <p>Acompanhe o fechamento de cada mês
                         em um período de até 12 meses e veja sua
-                          evolução de forma clara e linear</p>
+                          evolução de forma clara e linear.</p>
                       </div>
                     </div>
                     <div className="col-md-4">
@@ -234,11 +234,11 @@ function Home() {
                       <div className={css.cardPriceContainer}>
                         <div className={css.cardPrice}>
                           <h5>Plano Gratuito</h5>
-                          <p>Aproveite nossa fase de testes para usar o DashTrader sem custos</p>
+                          <p>Aproveite nossa fase de testes (usuários limitados!) para usar o DashTrader sem custos</p>
 
                           <h4>GRÁTIS</h4>
 
-                          <a href="http://app.dashtrader.com.br" target="_blank" className={css.createAccount}>Criar conta</a>
+                          <a href="http://app.dashtrader.com.br" target="_blank" className={css.createAccount}>CRIAR CONTA</a>
                         </div>
                       </div>
                     </div>
@@ -246,11 +246,11 @@ function Home() {
                       <div className={css.cardPriceContainer}>
                         <div className={css.cardPrice}>
                           <h5>Plano Premium</h5>
-                          <p>Em breve habilitaremos o plano premium e disponibilizaremos pra vocês</p>
+                          <p>Em breve.</p>
 
                           <h4>R$ ??,00/mês</h4>
 
-                          <a style={{ border: '1px solid #fff', background: 'transparent', color: '#fff' }}>Em breve</a>
+                          <a style={{ border: '1px solid #fff', background: 'transparent', color: '#fff' }}>EM BREVE</a>
                         </div>
                       </div>
                     </div>

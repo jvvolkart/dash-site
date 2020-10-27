@@ -3,6 +3,9 @@
     width: 100%;
     top: 0;
     transition: .3s;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
 }
 
 .header .headerContainer {
@@ -25,6 +28,9 @@
     z-index: 1;
     box-shadow: 1px 0px 10px #0000006b;
     transition: .3s;
+    min-height: 55px;
+    display: flex;
+    align-items: center;
 }
 
 .headerFixed .headerContainer {
