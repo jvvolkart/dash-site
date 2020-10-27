@@ -60,7 +60,7 @@ function Home() {
                   <h1><span>UM TRADER</span> EM OUTRO NÍVEL!</h1>
                   <p>OBTENHA INFORMAÇÕES VALIOSAS DAS SUAS OPERAÇÕES
                     E MULTIPLIQUE SEUS RESULTADOS.</p>
-                  <Button text="INICIAR AGORA" link='http://app.dashtrader.com.br' />
+                  <Button text="INICIAR AGORA" link='http://app.dashtrader.com.br/register' />
                 </div>
               </div>
               <div className="col-md-6">
@@ -243,7 +243,7 @@ function Home() {
                           <h5>Plano Gratuito</h5>
                           <p>Aproveite nossa fase de testes (usuários limitados!) para usar o DashTrader sem custos</p>
                           <h4>GRÁTIS</h4>
-                          <a href="http://app.dashtrader.com.br" target="_blank" className={css.createAccount}>CRIAR CONTA</a>
+                          <a href="http://app.dashtrader.com.br/register" target="_blank" className={css.createAccount}>CRIAR CONTA</a>
                         </div>
                       </div>
                     </div>
