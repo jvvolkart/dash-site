@@ -21,8 +21,6 @@ function Home() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      console.log(currentScrollY);
-
       if (currentScrollY > 1) {
         setFixedNav(true);
       } else {
@@ -38,9 +36,18 @@ function Home() {
   return (
     <>
       <Head>
-        <title>DashTrader</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>DashTrader - Gerenciamento trader melhor que planilha de excel!</title>
+        <meta name="description" content="Melhore seu gerenciamento da forma mais simples e eficaz possível, melhor que qualquer planilha de excel!"></meta>
+        <link rel="icon" href="/images/favicon.png" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossOrigin="anonymous"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <meta name="robots" content="index,follow"></meta>
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="DashTrader - Gerenciamento trader melhor que planilha de excel!" />
+        <meta property="og:description" content="Melhore seu gerenciamento da forma mais simples e eficaz possível, melhor que qualquer planilha de excel!" />
+        <meta property="og:image" content="https://dashtrader.com.br/images/dashDesktop.png" />
+        <meta property="og:url" content="https://dashtrader.com.br" />
       </Head>
 
       <body>
@@ -58,7 +65,7 @@ function Home() {
               </div>
               <div className="col-md-6">
                 <div className={css.firstImage}>
-                  <img style={{ width: '500px', maxWidth: '100%' }} src="/images/firstSection.png" />
+                  <img alt="homem segurando celular" style={{ width: '500px', maxWidth: '100%' }} src="/images/firstSection.png" />
                 </div>
               </div>
             </div>
@@ -80,7 +87,7 @@ function Home() {
               </div>
               <div className="col-md-6">
                 <div className={css.dashDesktop}>
-                  <img src="/images/dashDesktop.png" />
+                  <img alt="dastrader dashboard" src="/images/dashDesktop.png" />
                 </div>
               </div>
             </div>
@@ -98,7 +105,7 @@ function Home() {
                   <div className="row">
                     <div className="col-md-4">
                       <div className={css.card}>
-                        <img style={{ width: '100%' }} src="/images/cards/acomp.png" />
+                        <img alt="grafico" style={{ width: '100%' }} src="/images/cards/acomp.png" />
                         <p>Acompanhe o fechamento de cada mês
                         em um período de até 12 meses e veja sua
                           evolução de forma clara e linear.</p>
@@ -106,7 +113,7 @@ function Home() {
                     </div>
                     <div className="col-md-4">
                       <div className={css.card}>
-                        <img style={{ width: '100%' }} src="/images/cards/lucro-preju.png" />
+                        <img alt="grafico" style={{ width: '100%' }} src="/images/cards/lucro-preju.png" />
                         <p>Saiba como está se saindo a cada período
                         e tenha uma visão mais clara do seus
                         lucros.</p>
@@ -114,7 +121,7 @@ function Home() {
                     </div>
                     <div className="col-md-4">
                       <div className={css.card}>
-                        <img style={{ width: '100%' }} src="/images/cards/metas.png" />
+                        <img alt="grafico" style={{ width: '100%' }} src="/images/cards/metas.png" />
                         <p>Defina metas e acompanhe seu progresso
                         a cada operação.</p>
                       </div>
@@ -124,7 +131,7 @@ function Home() {
                   <div className="row">
                     <div className="col-md-4">
                       <div className={css.card}>
-                        <img style={{ width: '100%' }} src="/images/cards/horarios.png" />
+                        <img alt="grafico" style={{ width: '100%' }} src="/images/cards/horarios.png" />
                         <p>Saiba em quais horários você está tendo
                         melhores resultados e abuse deles!
                         </p>
@@ -132,7 +139,7 @@ function Home() {
                     </div>
                     <div className="col-md-4">
                       <div className={css.card}>
-                        <img style={{ width: '100%' }} src="/images/cards/semana.png" />
+                        <img alt="grafico" style={{ width: '100%' }} src="/images/cards/semana.png" />
                         <p style={{ width: '81%' }}>Deixa eu te fazer uma pergunta: Qual é o
                         melhor dia da semana para operar?
                         Não sabe? Está esperando o que pra descobrir?
@@ -141,7 +148,7 @@ function Home() {
                     </div>
                     <div className="col-md-4">
                       <div className={css.card}>
-                        <img style={{ width: '100%' }} src="/images/cards/outros.png" />
+                        <img alt="grafico" style={{ width: '100%' }} src="/images/cards/outros.png" />
                         <p style={{ width: '81%' }}>No momento existem 9 métricas
                         disponíveis, e estamos sempre pensando
                         em mais possibilidades para oferecer um
@@ -170,7 +177,7 @@ function Home() {
               </div>
               <div className="col-md-6">
                 <div className={css.dashDesktop}>
-                  <img style={{ width: '450px' }} src="/images/addTrader.png" />
+                  <img alt="cadastre os trades" style={{ width: '450px' }} src="/images/addTrader.png" />
                 </div>
               </div>
             </div>
@@ -192,7 +199,7 @@ function Home() {
               </div>
               <div className="col-md-6">
                 <div className={css.dashDesktop}>
-                  <img src="/images/iq.png" />
+                  <img alt="importação da iqoption" src="/images/iq.png" />
                 </div>
               </div>
             </div>
@@ -214,7 +221,7 @@ function Home() {
               </div>
               <div className="col-md-6">
                 <div className={css.dashDesktop}>
-                  <img src="/images/devices.png" />
+                  <img alt="gerencie com responsividade" src="/images/devices.png" />
                 </div>
               </div>
             </div>
@@ -235,9 +242,7 @@ function Home() {
                         <div className={css.cardPrice}>
                           <h5>Plano Gratuito</h5>
                           <p>Aproveite nossa fase de testes (usuários limitados!) para usar o DashTrader sem custos</p>
-
                           <h4>GRÁTIS</h4>
-
                           <a href="http://app.dashtrader.com.br" target="_blank" className={css.createAccount}>CRIAR CONTA</a>
                         </div>
                       </div>
@@ -247,9 +252,7 @@ function Home() {
                         <div className={css.cardPrice}>
                           <h5>Plano Premium</h5>
                           <p>Em breve.</p>
-
                           <h4>R$ ??,00/mês</h4>
-
                           <a style={{ border: '1px solid #fff', background: 'transparent', color: '#fff' }}>EM BREVE</a>
                         </div>
                       </div>
@@ -262,8 +265,6 @@ function Home() {
           </div>
         </section>
       </body>
-
-
     </>
   )
 }
