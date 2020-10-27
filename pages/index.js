@@ -48,6 +48,7 @@ function Home() {
         <meta property="og:description" content="Melhore seu gerenciamento da forma mais simples e eficaz possível, melhor que qualquer planilha de excel!" />
         <meta property="og:image" content="https://dashtrader.com.br/images/dashDesktop.png" />
         <meta property="og:url" content="https://dashtrader.com.br" />
+        <meta name="google-site-verification" content="h3zy4xIeYPC1kUOdwX_32b8YXIWqtyAHD5EuSS36cn0" />
       </Head>
 
       <body>
