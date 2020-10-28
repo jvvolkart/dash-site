@@ -76,6 +76,7 @@
   width: 87%;
   padding-bottom: 20px;
   justify-content: space-around;
+  box-shadow: 2px 2px 10px #00000036;
 }
 
 .cardPriceContainer .cardPrice h5 {
@@ -112,5 +113,5 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: bottom;
-    padding-bottom: 180px;
+    padding-bottom: 80px;
 }
