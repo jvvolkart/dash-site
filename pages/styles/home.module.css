@@ -115,3 +115,14 @@
     background-position-y: bottom;
     padding-bottom: 80px;
 }
+
+.whatsIcon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+.whatsIcon img {
+  width: 50px;
+}

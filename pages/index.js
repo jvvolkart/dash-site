@@ -53,6 +53,11 @@ function Home() {
 
       <body>
         <Header fixed={fixedNav} />
+        <div className={css.whatsIcon}>
+          <a href="https://api.whatsapp.com/send?phone=5548999189167" target="_blank">
+            <img alt="whats logo" src="/images/whats.png" />
+          </a>
+        </div>
         <section className={css.firstSection} style={width < 769 ? { paddingTop: '100px', backgroundSize: '45%' } : {}}>
           <div className="container">
             <div className="row">
