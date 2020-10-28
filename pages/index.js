@@ -53,7 +53,7 @@ function Home() {
 
       <body>
         <Header fixed={fixedNav} />
-        <section className={css.firstSection} style={width < 769 ? { paddingTop: '100px', backgroundSize: '220px' } : {}}>
+        <section className={css.firstSection} style={width < 769 ? { paddingTop: '100px', backgroundSize: '180px' } : {}}>
           <div className="container">
             <div className="row">
               <div className="col-md-6">
