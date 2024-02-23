@@ -54,7 +54,7 @@ function Home() {
       <body>
         <Header fixed={fixedNav} />
         <div className={css.whatsIcon}>
-          <a href="https://api.whatsapp.com/send?phone=5548999189167" target="_blank">
+          <a href="https://api.whatsapp.com/send?phone=5548998589424" target="_blank">
             <img alt="whats logo" src="/images/whats.png" />
           </a>
         </div>
