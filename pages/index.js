@@ -63,7 +63,7 @@ function Home() {
             <div className="row">
               <div className="col-md-6">
                 <div className={css.ctaTexts}>
-                  <h1><span>Um Trader</span> em outro nível!</h1>
+                  <h1><span>Um Trader</span> Em outro nível!</h1>
                   <p>Obtenha informações valiosas das suas operações
                     e multiplique seus resultados.</p>
                   <Button text="INICIAR AGORA" link='http://app.dashtrader.com.br/register' />
