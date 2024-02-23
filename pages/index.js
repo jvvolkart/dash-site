@@ -63,9 +63,9 @@ function Home() {
             <div className="row">
               <div className="col-md-6">
                 <div className={css.ctaTexts}>
-                  <h1><span>UM TRADER</span> EM OUTRO NÍVEL!</h1>
-                  <p>OBTENHA INFORMAÇÕES VALIOSAS DAS SUAS OPERAÇÕES
-                    E MULTIPLIQUE SEUS RESULTADOS.</p>
+                  <h1><span>Um Trader</span> em outro nível!</h1>
+                  <p>Obtenha informações valiosas das suas operações
+                    e multiplique seus resultados.</p>
                   <Button text="INICIAR AGORA" link='http://app.dashtrader.com.br/register' />
                 </div>
               </div>
@@ -199,8 +199,7 @@ function Home() {
                   <h2>IqOption -> DashTrader</h2>
                   <p>De forma muito simples e rápida você pode trazer os dados das
                   suas operações para dentro do DashTrader, basta ir na tela de
-                  Histórico de Trading e baixar o CSV do período desejado com seus
-                  dados!</p>
+                  Histórico de Trading e baixar o CSV do período desejado!</p>
                 </div>
               </div>
               <div className="col-md-6">
@@ -219,8 +218,8 @@ function Home() {
                 <div className={css.ctaTexts}>
                   <h4>TECNOLOGIA DE PONTA</h4>
                   <h2>Responsivo</h2>
-                  <p>O DashTrader usa as melhores tecnologias disponíveis atualmente
-                  e é claro, funciona perfeitamente em SmartPhones, Tablets e
+                  <p>O DashTrader utiliza as melhores tecnologias disponíveis no mercado
+                  e funciona perfeitamente em SmartPhones, Tablets e
                   Computadores com um layout flexível e adaptável.
                   </p>
                 </div>
