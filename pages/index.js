@@ -85,10 +85,9 @@ function Home() {
                 <div className={css.ctaTexts}>
                   <h4>DASH O QUÊ?</h4>
                   <h2>Dashboard Trader</h2>
-                  <p>O DashTrader é o software de métricas e gerenciamento mais
-                  robusto, poderoso, assertivo e direto do que qualquer outro
-                  software ou planilha de Excel. Tudo isso de uma forma simples e
-                  com uma usabilidade muito amigável!</p>
+                  <p>O DashTrader é o <b>software de métricas e gerenciamento</b> mais
+                  robusto, poderoso e direto do que qualquer planilha de Excel. Tudo isso de uma forma simples e
+                  com uma ótima usabilidade!</p>
                 </div>
               </div>
               <div className="col-md-6">
@@ -112,17 +111,13 @@ function Home() {
                     <div className="col-md-4">
                       <div className={css.card}>
                         <img alt="grafico" style={{ width: '100%' }} src="/images/cards/acomp.png" />
-                        <p>Acompanhe o fechamento de cada mês
-                        em um período de até 12 meses e veja sua
-                          evolução de forma clara e linear.</p>
+                        <p>Acompanhe seu resultado nos últimos 12 meses e veja sua evolução mensal.</p>
                       </div>
                     </div>
                     <div className="col-md-4">
                       <div className={css.card}>
                         <img alt="grafico" style={{ width: '100%' }} src="/images/cards/lucro-preju.png" />
-                        <p>Saiba como está se saindo a cada período
-                        e tenha uma visão mais clara do seus
-                        lucros.</p>
+                        <p>Monitore seus resultados por período.</p>
                       </div>
                     </div>
                     <div className="col-md-4">
@@ -139,26 +134,21 @@ function Home() {
                       <div className={css.card}>
                         <img alt="grafico" style={{ width: '100%' }} src="/images/cards/horarios.png" />
                         <p>Saiba em quais horários você está tendo
-                        melhores resultados e abuse deles!
+                        melhores resultados e faça melhor proveito deles!
                         </p>
                       </div>
                     </div>
                     <div className="col-md-4">
                       <div className={css.card}>
-                        <img alt="grafico" style={{ width: '100%' }} src="/images/cards/semana.png" />
-                        <p style={{ width: '81%' }}>Deixa eu te fazer uma pergunta: Qual é o
-                        melhor dia da semana para operar?
-                        Não sabe? Está esperando o que pra descobrir?
+                        <img alt="grafico" style={{ width: '95%' }} src="/images/cards/semana.png" />
+                        <p style={{ width: '81%' }}>Quer saber qual é o melhor dia da semana para operar? Deixa com a gente!
                         </p>
                       </div>
                     </div>
                     <div className="col-md-4">
                       <div className={css.card}>
                         <img alt="grafico" style={{ width: '100%' }} src="/images/cards/outros.png" />
-                        <p style={{ width: '81%' }}>No momento existem 9 métricas
-                        disponíveis, e estamos sempre pensando
-                        em mais possibilidades para oferecer um
-                        melhor serviço para você!
+                        <p style={{ width: '81%' }}>Ao todo são 9 métricas para você gerenciar suas operações da melhor forma possível!
                         </p>
                       </div>
                     </div>
@@ -245,8 +235,8 @@ function Home() {
                     <div className="col-md-6">
                       <div className={css.cardPriceContainer}>
                         <div className={css.cardPrice}>
-                          <h5>Plano Gratuito</h5>
-                          <p>Aproveite nossa fase de testes (usuários limitados!) para usar o DashTrader sem custos</p>
+                          <h5>Acesso gratuito</h5>
+                          <p>Aproveite nosso período de testes por <b>7 dias</b> e conheça o DashTrader <b>sem custos!</b></p>
                           <h4>GRÁTIS</h4>
                           <a href="http://app.dashtrader.com.br/register" target="_blank" className={css.createAccount}>CRIAR CONTA</a>
                         </div>
@@ -255,10 +245,10 @@ function Home() {
                     <div className="col-md-6">
                       <div className={css.cardPriceContainer}>
                         <div className={css.cardPrice}>
-                          <h5>Plano Premium</h5>
-                          <p>Em breve.</p>
-                          <h4>R$ ??,00/mês</h4>
-                          <a style={{ border: '1px solid #fff', background: 'transparent', color: '#fff' }}>EM BREVE</a>
+                          <h5>Plano premium</h5>
+                          <p>Acesso a <b>todas</b> as funcionalidades, dashboards, upload de planilhas, <b>por apenas:</b></p>
+                          <h4>R$ 19,90/mês</h4>
+                          <a href="http://app.dashtrader.com.br/register" target="_blank" className={css.createAccount}>CRIAR CONTA</a>
                         </div>
                       </div>
                     </div>
